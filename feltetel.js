@@ -76,3 +76,17 @@ else{
 //---------------------------------------------------------
 // Adott egy pont, melynek bekérjük a koordinátáit. Határozzuk meg, melyik
 // síknegyedben van!
+let x = parseFloat(prompt("Add meg az x koordinátát: "))
+let y = parseFloat(prompt("Add meg az y koordinátát: "))
+if(x > 0 && y > 0){
+    console.log("Az első síknegyedben van")
+}
+else if(x < 0 && y > 0){
+    console.log("A második síknegyedben van")
+}
+else if(x < 0 && y < 0){
+    console.log("A harmadik síknegyedben van")
+}
+else if(x > 0 && y < 0){
+    console.log("A negyedik síknegyedben van")
+}
